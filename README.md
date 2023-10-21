@@ -1,5 +1,27 @@
 ## Welcome to Apache Tomcat!
 
+### How to start the tomcat
+Main class设置为org.apache.catalina.startup.Bootstrap
+
+添加VM options
+```
+-Dcatalina.home=F:/sources/open-sources/tomcat
+-Dcatalina.base=F:/sources/open-sources/tomcat
+-Djava.endorsed.dirs=F:/sources/open-sources/tomcat/endorsed
+-Djava.io.tmpdir=F:/sources/open-sources/tomcat/temp
+-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+-Djava.util.logging.config.file=F:/sources/open-sources/tomcat/conf/logging.properties
+-Dcom.sun.management.jmxremote
+-Dcom.sun.management.jmxremote.port=8011
+-Dcom.sun.management.jmxremote.ssl=false
+-Dcom.sun.management.jmxremote.authenticate=false
+-Duser.language=en #避免出现中文乱码问题
+-Duser.region=US
+```
+
+### Test
+> 把war包放入 webapps目录
+
 ### What Is It?
 
 The Apache Tomcat® software is an open source implementation of the Java
