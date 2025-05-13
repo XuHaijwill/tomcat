@@ -295,7 +295,8 @@ public class JDTCompiler extends org.apache.jasper.compiler.Compiler {
                 settings.put(CompilerOptions.OPTION_Source, CompilerOptions.VERSION_1_8);
             // Version format changed from Java 9 onwards.
             // Support old format that was used in EA implementation as well
-            } else if(opt.equals("9") || opt.equals("1.9")) {
+            }
+          /*  else if(opt.equals("9") || opt.equals("1.9")) {
                 settings.put(CompilerOptions.OPTION_Source, CompilerOptions.VERSION_9);
             } else if(opt.equals("10")) {
                 settings.put(CompilerOptions.OPTION_Source, CompilerOptions.VERSION_10);
@@ -316,7 +317,8 @@ public class JDTCompiler extends org.apache.jasper.compiler.Compiler {
                 // Tomcat. May be supported in a snapshot build.
                 // This is checked against the actual version below.
                 settings.put(CompilerOptions.OPTION_Source, "17");
-            } else {
+            } */
+            else {
                 log.warn(Localizer.getMessage("jsp.warning.unknown.sourceVM", opt));
                 settings.put(CompilerOptions.OPTION_Source, CompilerOptions.VERSION_1_8);
             }
@@ -350,7 +352,8 @@ public class JDTCompiler extends org.apache.jasper.compiler.Compiler {
                 settings.put(CompilerOptions.OPTION_Compliance, CompilerOptions.VERSION_1_8);
             // Version format changed from Java 9 onwards.
             // Support old format that was used in EA implementation as well
-            } else if(opt.equals("9") || opt.equals("1.9")) {
+            }
+          /*  else if(opt.equals("9") || opt.equals("1.9")) {
                 settings.put(CompilerOptions.OPTION_TargetPlatform, CompilerOptions.VERSION_9);
                 settings.put(CompilerOptions.OPTION_Compliance, CompilerOptions.VERSION_9);
             } else if(opt.equals("10")) {
@@ -380,7 +383,8 @@ public class JDTCompiler extends org.apache.jasper.compiler.Compiler {
                 // This is checked against the actual version below.
                 settings.put(CompilerOptions.OPTION_TargetPlatform, "17");
                 settings.put(CompilerOptions.OPTION_Compliance, "17");
-            } else {
+            } */
+            else {
                 log.warn(Localizer.getMessage("jsp.warning.unknown.targetVM", opt));
                 settings.put(CompilerOptions.OPTION_TargetPlatform, CompilerOptions.VERSION_1_8);
             }
