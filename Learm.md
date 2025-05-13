@@ -1,0 +1,3 @@
+-Dcatalina.home=D:/sources/git/github/tomcat/home  -Dcatalina.base=D:/sources/git/github/tomcat/home  -Djava.endorsed.dirs=D:/sources/git/github/tomcat/home/endorsed  -Djava.io.tmpdir=D:/sources/git/github/tomcat/home/temp  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager  -Djava.util.logging.config.file=D:/sources/git/github/tomcat/home/conf/logging.properties  -Dcom.sun.management.jmxremote  -Dcom.sun.management.jmxremote.port=8025  -Dcom.sun.management.jmxremote.ssl=false  -Dcom.sun.management.jmxremote.authenticate=false  -Duser.language=en -Duser.region=US
+
+https://blog.csdn.net/zyx1260168395/article/details/134257066
